@@ -3,7 +3,7 @@
 Author: Shayne Kasai
 Purpose: exercise to shorten URLs
 
-Please be gentle, this is my first time with Mongo and F3
+Please be gentle, this is my first time with MongoDB, 0MQ, and F3's REST functionality
 
 # Requirements
 There are a few things required to run this
