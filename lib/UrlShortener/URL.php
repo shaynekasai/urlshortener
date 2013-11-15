@@ -12,10 +12,10 @@ namespace lib\UrlShortener;
 
 class URL {
     /**
-     *  I want to support more but crc32 for now, returns an 8 character rep of the url
+     * I want to support more but crc32 for now, returns an 8 character rep of the url
      *
-     *  @return string
-     *  @param $url  
+     * @return string
+     * @param $url  
      */
     public function shortenCRC($url) {
        return( hash('crc32', $url) ); 
