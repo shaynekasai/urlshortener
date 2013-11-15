@@ -15,15 +15,15 @@
 use lib\UrlShortener\URLService as URLService;
 
 class TestList {
-	private  $Service;
+    private  $Service;
 	
-	function __construct() {
-		$this->Service =  new URLService();
-	}
+    function __construct() {
+        $this->Service =  new URLService();
+    }
 	
-	/* 
-	 * This is just a demo
-	 */
+    /* 
+     * This is just a demo
+     */
     function get($params='') {
     	$objURLs = $this->Service->getURLs();
     	echo $objURLs == false ? json_encode(array("status" => "error"))  : json_encode($objURLs);
