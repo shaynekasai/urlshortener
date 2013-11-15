@@ -11,8 +11,6 @@
 namespace lib\UrlShortener;
 
 class URL {
-
-
 	/**
 	 *  I want to support more but crc32 for now, returns an 8 character rep of the url
 	 *
