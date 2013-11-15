@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta charset="<?php echo $ENCODING; ?>" />
+		<title>urlshortener</title>
+		
+		<base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
+		
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.2/head.load.min.js"></script>
+		<script language="javascript">
+			head.load(["http://code.jquery.com/jquery-1.10.1.min.js", "ui/js/underscore-min.js", "ui/js/backbone-min.js", "ui/js/app.js",  "http://yui.yahooapis.com/pure/0.3.0/pure-min.css", "ui/css/app.css"], function() {});
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	
+		
+		<header>
+			<h1>urlshortener</h1>
+			<p>This is a URL shortening service. For instant gratification, paste a URL in the field below, and then click Shorten.</p>
+		</header>
+		
+		<section class="content">
+		
+			<div id="shortener-app">
+				<div class="alert-box url-shorten-error  pure-u-3-4"></div>
+				
+			 	<form method="post" action="#" class="pure-form ui-shorten-form">
+			 		<input id="url" type="url" placeholder="Enter a fancy URL here, example: http://www.google.ca" name="url" value="" required="required" class="pure-input-2-3"/>
+			 		<button type="submit" class="pure-button pure-button-primary" id="btn-shorten">Shorten</button>
+			 	</form>
+			
+		
+				<div class="pure-g-r">
+					 
+					 	
+					 	<div class="alert-box url-shorten-status pure-u-3-4">
+					 	
+					 		<span></span>
+					 		<a href="" class="icon-paste ui-copy-link" title="Copy this link" id="btn-copy"> </a>
+					 	</div>
+					 	
+					
+				</div>
+			</div>
+			
+		</section>
+		
+		<footer>
+			
+		</footer>
+		
+	</body>
+</html>

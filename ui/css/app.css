@@ -1,0 +1,76 @@
+/* general layout */
+header,
+section,
+footer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8px; }
+
+header {
+  text-align: center; }
+  header h1 {
+    font-family: Open Sans;
+    font-size: 4em; }
+
+section {
+  text-align: center; }
+
+.alert-box {
+  background-color: #E9E9E9;
+  border-color: #D0D0D0;
+  border-style: solid;
+  border-width: 1px;
+  color: #505050;
+  display: block;
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+  padding: 0.6875em 1.3125em 0.75em 0.6875em;
+  position: relative;
+  display: none;
+  margin: 0 auto; }
+
+/* specific shortener form styles */
+.ui-shorten-form {
+  margin: 40px 0 20px 0; }
+
+.url-shorten-error {
+  background-color: #C60F13;
+  color: #fff; }
+
+.icon-paste {
+  text-decoration: none;
+  color: inherit;
+  float: right; }
+
+.icon-paste:hover {
+  color: #000; }
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em; }
+
+  input, button {
+    width: 100% !important; } }
+/* fonts */
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-paste:before {
+  content: "\e600"; }
