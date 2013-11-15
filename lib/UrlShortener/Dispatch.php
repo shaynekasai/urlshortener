@@ -7,18 +7,18 @@
 use lib\UrlShortener\URLService as URLService;
 
 class Dispatch {
-	private  $Service;
+    private  $Service;
 	
-	function __construct() {
+    function __construct() {
 		$this->Service =  new URLService();
-	}
+    }
 	
-	/* 
-	 * This is meant to handle any get requests for the service
-	 *
-	 * @param array
-	 * @returns 
-	 */
+    /* 
+     * This is meant to handle any get requests for the service
+     *
+     * @param array
+     * @returns 
+     */
     function get($params='') {
     	$hash = (isset($_GET['id']) == true) ? (string)$_GET['id'] : $params['hash'];
     	$objURL = $this->Service->getURL($hash);
@@ -31,11 +31,11 @@ class Dispatch {
     }
     
     /* 
-	 * This is meant to handle any post requests for the service, but mainly to ship and shorten.
-	 *
-	 * @param 
-	 * @returns 
-	 */
+     * This is meant to handle any post requests for the service, but mainly to ship and shorten.
+     *
+     * @param 
+     * @returns 
+     */
     function post() {
     	
     	$url = (string)$_POST['url'];
