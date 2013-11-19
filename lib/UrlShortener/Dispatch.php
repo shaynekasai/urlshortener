@@ -31,11 +31,11 @@ class Dispatch {
     }
     
     /* 
-	 * This is meant to handle any post requests for the service, but mainly to ship and shorten.
-	 *
-	 * @param 
-	 * @returns 
-	 */
+     * This is meant to handle any post requests for the service, but mainly to ship and shorten.
+     *
+     * @param 
+     * @returns 
+     */
     function post() {
     	
     	$url = (string)$_POST['url'];
